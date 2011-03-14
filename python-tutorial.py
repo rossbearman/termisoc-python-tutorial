@@ -4,6 +4,7 @@ class Player:
 	level = 1
 
 class Output:
+	@staticmethod
 	def printHelp(self):
 		print "Known commands are:\n"
 		print "quit\n"
@@ -17,4 +18,4 @@ while(True):
 	if userInput == 'quit':
 		quit()
 	if userInput == 'help':
-		output.printHelp()
+		Output.printHelp()
